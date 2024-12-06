@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Insta Style</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .insta-post {
+            width: 350px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .insta-header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .profile-pic {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .username {
+            font-weight: bold;
+        }
+        .insta-image {
+            width: 100%;
+            display: block;
+        }
+        .insta-caption {
+            padding: 10px;
+        }
+        .username-caption {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .like-comment {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            color: #888;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="insta-post">
+        <!-- Header -->
+        <div class="insta-header">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <span class="username">user123</span>
+        </div>
+        
+        <!-- Image -->
+        <img src="NCS.jpg" alt="Post Image" class="insta-image">
+        
+        <!-- Caption -->
+        <div class="insta-caption">
+            <p><span class="username-caption">user123</span>La nouvelle-Calédonie ! 🌅</p>
+            <div class="like-comment">
+                <span>💖 500 likes</span>
+                <span>💬 20 comments</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
